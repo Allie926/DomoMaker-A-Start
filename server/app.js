@@ -20,7 +20,7 @@ mongoose.connect(dbURL, (err) => {
 });
 
 // pull in our routes
-const router = require('./router,js');
+const router = require('./router.js');
 
 const app = express();
 app.use('/assets', express.static(path.resolve(`${__dirname}/../hosted/`)));
